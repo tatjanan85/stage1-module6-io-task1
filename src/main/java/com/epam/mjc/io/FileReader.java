@@ -32,7 +32,7 @@ public class FileReader {
                         phone = Long.parseLong(values[1]);
                         break;
                     default:
-                        System.err.println("No such field");
+                        System.out.println("No such field");
                 }
             }
         } catch (IOException e) {

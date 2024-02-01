@@ -7,7 +7,8 @@ import java.io.IOException;
 public class FileReader {
 
     public Profile getDataFromFile(File file) {
-        String name = "", email = "";
+        String name = "";
+        String email = "";
         int age = 0;
         long phone = 0;
 
@@ -30,6 +31,8 @@ public class FileReader {
                     case "Phone":
                         phone = Long.parseLong(values[1]);
                         break;
+                    default:
+                        System.err.println("No such field");
                 }
             }
         } catch (IOException e) {
